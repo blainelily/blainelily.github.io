@@ -9,6 +9,19 @@
     
 <body>
 <style>
+<script type="text/JavaScript">
+<!--
+
+//set ALL images for the rollover effect
+window.onload=function(){
+	var imgArr = document.getElementsByTagName('img');
+	for(var i=0;i<imgArr.length;i++){
+		imgArr[i].onmouseover = function(){this.className='enlarge';}
+		imgArr[i].onmouseout = function(){this.className='';}
+	}
+}
+//-->
+</script>
 body {
     background-color: MOCCASIN;
 }
@@ -30,8 +43,8 @@ h3{
 window.alert("Hello" + "!");
 </script>
   
-  <h1>ABOUT ME</h1>
-<p>Hi, I'm Blaine!</p>
+  <h1>HI, I'M BLAINE</h1>
+    <p>keep scrolling to learn more about me!</p>
 <img src="IMG_2094.JPG" alt="pic" width="280px" height="285px" class="rotateimg90">
     
  <h2>My I Love Yous and I Love You Nots</h2>
@@ -59,8 +72,7 @@ p {
 </style>
 <h3>Creations!</h3>
 <p>A couple days ago, I attempted with a partner to create a functioning side scrolling game. The little dog wants to reach the dog house and eat as many treats as possible but he has to get around bricks and mud or else the game restarts.</p>
-   
-    <h4>Today we worked on text adventures which I'll talk about below</h3>
+    
     
      <!-- Table starts here-->
     <div style ="overflow-x:auto;">
